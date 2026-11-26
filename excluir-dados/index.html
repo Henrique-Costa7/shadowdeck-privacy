@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excluir conta e dados — ShadowDeck</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #1b2430; background: #fff; }
+  h1 { font-size: 1.7rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid #d5dbe3; padding: 8px; text-align: left; vertical-align: top; }
+  th { background: #f3f6fa; }
+  @media (prefers-color-scheme: dark) { body { background: #12171d; color: #e6ebf1; } th { background: #1d2631; } th, td { border-color: #33404f; } a { color: #6cc4ff; } }
+</style>
+</head>
+<body>
+<h1>Como excluir sua conta e seus dados no ShadowDeck</h1>
+<p><strong>Última atualização:</strong> 26 de novembro de 2026</p>
+
+<p>O ShadowDeck não tem servidor próprio nem cadastro. Não existe uma conta ShadowDeck: o app guarda seus dados <strong>no seu aparelho</strong> e, se você entrar com o Google, um backup opcional na <strong>pasta oculta do app no seu próprio Google Drive</strong>. Por isso, a exclusão é feita por você, nos passos abaixo. O desenvolvedor do ShadowDeck não tem acesso a esses dados e não guarda cópia deles.</p>
+
+<h2>Passo 1 — Apagar os dados do app no aparelho</h2>
+<ol>
+  <li>Abra o ShadowDeck.</li>
+  <li>Vá em <strong>Ajustes</strong> e role até <strong>Backup</strong>.</li>
+  <li>Toque em <strong>Apagar todos os dados</strong> e confirme em <strong>Apagar definitivamente</strong>.</li>
+</ol>
+<p>Se preferir, desinstale o app: isso também remove todos os dados locais.</p>
+
+<h2>Passo 2 — Desconectar a conta Google (se você entrou)</h2>
+<ol>
+  <li>Em <strong>Ajustes → Conta Google</strong>, toque em <strong>Sair</strong>.</li>
+  <li>Para revogar o acesso do app à sua conta, abra <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, escolha <strong>ShadowDeck</strong> e toque em <strong>Remover acesso</strong>.</li>
+</ol>
+
+<h2>Passo 3 — Apagar o backup no Google Drive (se você usou o backup)</h2>
+<ol>
+  <li>No computador, abra o <a href="https://drive.google.com/drive/settings">Google Drive → Configurações</a>.</li>
+  <li>Vá em <strong>Gerenciar aplicativos</strong>, localize <strong>ShadowDeck</strong> e toque em <strong>Opções → Excluir dados ocultos do app</strong>.</li>
+</ol>
+
+<h2>O que é excluído e o que é mantido</h2>
+<table>
+<tr><th>Dado</th><th>Situação</th></tr>
+<tr><td>Cards, decks, progresso, estatísticas, vídeos, canais, palavras e frases salvos, configurações e sessão da conta Google no aparelho</td><td><strong>Excluídos</strong> no Passo 1, na hora.</td></tr>
+<tr><td>Backup do progresso na pasta oculta do Google Drive</td><td><strong>Excluído</strong> no Passo 3. Antes disso, permanece na sua conta Google, que é sua.</td></tr>
+<tr><td>Dados em poder do desenvolvedor</td><td><strong>Nenhum.</strong> O ShadowDeck não envia seus dados a servidores do desenvolvedor, portanto não há nada a excluir nem período de retenção.</td></tr>
+<tr><td>Dados enviados a serviços de terceiros durante o uso (Google Tradutor, YouTube, VoiceTube, dictionaryapi.dev, reconhecimento de voz do Android)</td><td>Ficam sujeitos às políticas e aos prazos de cada serviço, fora do controle do ShadowDeck. O app não associa esses envios a uma conta.</td></tr>
+</table>
+
+<h2>Dúvidas</h2>
+<p>Se precisar de ajuda com a exclusão, abra uma solicitação em <a href="https://github.com/Henrique-Costa7/shadowdeck-privacy/issues">github.com/Henrique-Costa7/shadowdeck-privacy/issues</a> mencionando "ShadowDeck". Veja também a <a href="../">Política de Privacidade</a>.</p>
+</body>
+</html>
