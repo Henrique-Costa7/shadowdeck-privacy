@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — ShadowDeck</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; color: #1b2430; background: #fff; }
+  h1 { font-size: 1.7rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  th, td { border: 1px solid #d5dbe3; padding: 8px; text-align: left; vertical-align: top; }
+  th { background: #f3f6fa; }
+  @media (prefers-color-scheme: dark) { body { background: #12171d; color: #e6ebf1; } th { background: #1d2631; } th, td { border-color: #33404f; } a { color: #6cc4ff; } }
+</style>
+</head>
+<body>
+<h1>Política de Privacidade do ShadowDeck</h1>
+<p><strong>Última atualização:</strong> 26 de novembro de 2026</p>
+
+<p>O ShadowDeck (pacote Android <code>app.shadowdeck</code>) é um aplicativo para estudar inglês com shadowing em vídeos do YouTube e flashcards. Esta política explica quais dados o app usa, para quê, e com quem eles são compartilhados.</p>
+
+<h2>Resumo</h2>
+<ul>
+  <li>O app <strong>não tem servidor próprio</strong>, não exige cadastro e <strong>não tem anúncios, rastreadores nem ferramentas de análise de uso</strong>.</li>
+  <li>Seu progresso, cards, configurações e histórico ficam <strong>no seu aparelho</strong>.</li>
+  <li>Se você entrar com a conta Google, o app pode salvar um backup no <strong>seu próprio Google Drive</strong> e ler o <strong>seu conteúdo do YouTube</strong>. Nós (o desenvolvedor) não recebemos nada disso.</li>
+  <li>Não vendemos dados e não os compartilhamos com terceiros para publicidade.</li>
+</ul>
+
+<h2>Dados armazenados no aparelho</h2>
+<p>Ficam apenas no armazenamento do app, no seu celular: decks e cards, resultados e estatísticas de estudo, vídeos, canais, palavras e frases salvos, configurações (nível, meta diária, lembrete) e o token de acesso da conta Google, quando você entra. Desinstalar o app ou usar <em>Ajustes → Apagar dados</em> remove tudo isso do aparelho.</p>
+
+<h2>Permissões do Android</h2>
+<table>
+<tr><th>Permissão</th><th>Para que serve</th></tr>
+<tr><td>Microfone</td><td>Reconhecer sua fala para dar a nota de pronúncia e gravar sua voz para você comparar com o original. A gravação fica apenas na memória do app enquanto você a ouve e <strong>não é salva nem enviada</strong> por nós.</td></tr>
+<tr><td>Internet</td><td>Carregar vídeos, legendas, traduções e dicionário (veja abaixo).</td></tr>
+<tr><td>Notificações e alarmes exatos, e iniciar com o aparelho</td><td>Lembrete diário de estudo, agendado localmente no aparelho.</td></tr>
+<tr><td>Manter o aparelho ativo; modificar configurações de áudio</td><td>Tocar áudio e vídeo sem interrupção durante o estudo.</td></tr>
+</table>
+
+<h2>Login com Google (opcional)</h2>
+<p>Se você escolher entrar com o Google, o app solicita dois acessos:</p>
+<ul>
+  <li><strong>Pasta oculta do app no Google Drive</strong> (<code>drive.appdata</code>): guarda um arquivo de backup do seu progresso. O app só enxerga essa pasta do próprio app, nunca seus outros arquivos do Drive.</li>
+  <li><strong>YouTube, somente leitura</strong> (<code>youtube.readonly</code>): lê suas curtidas, playlists e inscrições para sugerir vídeos de estudo. O app não altera nem publica nada na sua conta.</li>
+</ul>
+<p>Também usamos seu nome, e-mail e foto de perfil para mostrar quem está conectado. Esses dados vão do Google direto para o seu aparelho. O uso das informações recebidas das APIs do Google segue a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+<p>Você pode desconectar a qualquer momento no app (Ajustes → Conta Google) e revogar o acesso em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. O backup pode ser removido em Google Drive → Configurações → Gerenciar aplicativos → ShadowDeck → Excluir dados ocultos.</p>
+
+<h2>Serviços de terceiros que recebem dados</h2>
+<p>O app faz as requisições diretamente do seu aparelho para os serviços abaixo. Cada um recebe o seu endereço IP e os dados indicados, e trata essas informações segundo a própria política.</p>
+<table>
+<tr><th>Serviço</th><th>O que é enviado</th><th>Finalidade</th></tr>
+<tr><td>YouTube (Google)</td><td>Identificador do vídeo; reprodução pelo player incorporado; busca; feed de canais; suas curtidas, playlists e inscrições (se logado)</td><td>Reproduzir vídeos, obter legendas e descobrir conteúdo</td></tr>
+<tr><td>VoiceTube</td><td>Consultas ao catálogo de vídeos e identificador do vídeo</td><td>Vídeos por nível e transcrições</td></tr>
+<tr><td>Google Tradutor</td><td>O texto da palavra ou frase que você pede para traduzir</td><td>Tradução para português</td></tr>
+<tr><td>dictionaryapi.dev</td><td>A palavra consultada</td><td>Definição, pronúncia e exemplos</td></tr>
+<tr><td>Reconhecimento de voz do Android (Google)</td><td>O áudio da sua fala, processado pelo serviço de voz do próprio sistema</td><td>Nota de pronúncia e ditado</td></tr>
+<tr><td>Google Drive</td><td>O arquivo de backup do seu progresso, na sua conta</td><td>Backup e troca de aparelho (opcional)</td></tr>
+</table>
+
+<h2>Segurança</h2>
+<p>Toda a comunicação com esses serviços usa HTTPS. Como os dados ficam no aparelho, protegê-lo (bloqueio de tela) protege também os seus dados do app.</p>
+
+<h2>Seus controles</h2>
+<ul>
+  <li>Exportar e importar um backup em arquivo (Ajustes).</li>
+  <li>Apagar todos os dados do app (Ajustes → Apagar dados) ou desinstalar o app.</li>
+  <li>Desconectar a conta Google e revogar o acesso, como descrito acima.</li>
+  <li>Retirar a permissão de microfone ou notificações nas configurações do Android.</li>
+</ul>
+
+<h2>Crianças</h2>
+<p>O ShadowDeck não é direcionado a crianças menores de 13 anos e não coleta intencionalmente dados delas.</p>
+
+<h2>Mudanças nesta política</h2>
+<p>Se o app passar a tratar dados de outra forma, esta página será atualizada e a data acima mudará.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas ou pedidos sobre privacidade: abra uma solicitação em <a href="https://github.com/Henrique-Costa7/shadowdeck-privacy/issues">github.com/Henrique-Costa7/shadowdeck-privacy/issues</a>.</p>
+</body>
+</html>
